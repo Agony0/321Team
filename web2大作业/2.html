@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.box{
+			width: 300px;
+			height: 400px;
+			padding: 0 20px;
+			border: 2px solid #1688ea;
+			margin: 50px auto;
+		}
+		.tit{
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+		.brand{
+			color: #1688ea;
+			font-size: 18px;
+			margin-right: 20px;
+		}
+		.inp{
+			width: 100%;
+			height: 40px;
+			text-indent: 8px;
+		}
+		.notice{
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+
+		.code{
+			width: 60%;
+		}
+		.getCode{
+			width: 35%;
+			height: 44px;
+			float: right;
+			border: none;
+			background-color: #eee;
+		}
+		.codeImg{
+			height: 40px;
+		}
+		.btn{
+			background: #1688ea;
+			width: 100%;
+			height: 40px;
+			border: none;
+			margin-top: 8px;
+			color: #fff;
+			border-radius: 3px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p class="tit">
+			<!-- <span class="brand">Web开发二</span> -->
+			<span>用户登录</span>
+		</p>
+		<input class="inp" type="text" placeholder="用户名">
+		<p class="notice"></p>
+
+		<input class="inp" type="password" placeholder="密码">
+		<p class="notice"></p>
+
+		<div>
+			<input class="inp code" type="text" placeholder="验证码">
+			<button class="getCode">获取验证码</button>
+		</div>
+		<div class="codeImg">
+			<!-- 点击‘获取验证码’按钮后，在此处添加 验证码图片的img标签 -->
+		</div>
+		<p class="notice"></p>
+
+		<input type="checkbox" checked>下次自动登录
+		<button class="btn">登录</button>
+	</div>
+	<script>
+		var inp = document.getElementsByClassName("inp");
+		var notice = document.getElementsByClassName("notice");
+		var inpcode = document.getElementsByClassName("inp code");
+		var getCode = document.getElementsByClassName("getCode");
+		var codeImg = document.getElementsByClassName("codeImg");
+		var btn = document.getElementsByClassName("btn");
+
+		inp[0].onfocus = function(){
+			notice[0].innerHTML = "请输入4-10位用户名:";
+		}
+		inp[0].onblur = function(){
+			if(inp[0].value.length < 4||inp[0].value.length > 10){
+				notice[0].innerHTML = "用户名位数不对";
+			}else{
+				notice[0].innerHTML = "";
+			}
+		}
+		inp[1].onfocus = function(){
+			notice[1].innerHTML = "请输入6-12位密码:";
+		}
+		inp[1].onblur = function(){
+			if(inp[1].value.length < 6||inp[1].value.length > 12){
+				notice[1].innerHTML = "密码位数不对";
+			}else{
+				notice[1].innerHTML = "";
+			}
+		}
+		getCode[0].onclick = function(){
+			var imgNode = document.createElement("img");
+			var num = parseInt(Math.random()*10);
+			console.log(num);
+			// var str1=codeImg[0].children[0].getAttribute("src");
+			if(codeImg[0].children.length =="0"){	
+				if(num == 0){
+					imgNode.src = "images/zAZfB.jpg";
+				}
+				else if(num == 1){
+					imgNode.src = "images/ZEhUN.jpg";
+				}
+				else if(num == 2){
+					imgNode.src = "images/zFC9H.jpg";
+				}
+				else if(num == 3){
+					imgNode.src = "images/zhWY9.jpg";
+				}
+				else if(num == 4){
+					imgNode.src = "images/Zin4c.jpg";
+				}
+				else if(num == 5){
+					imgNode.src = "images/ZITGj.jpg";
+				}
+				else if(num == 6){
+					imgNode.src = "images/zJ6iV.jpg";
+				}
+				else if(num == 7){
+					imgNode.src = "images/zjsKP.jpg";
+				}
+				else if(num == 8){
+					imgNode.src = "images/ZKc9S.jpg";
+				}
+				else if(num == 9){
+					imgNode.src = "images/zKDXU.jpg";
+				}
+				codeImg[0].appendChild(imgNode);
+			}
+			else{
+				var imgNode1 = document.getElementsByTagName("img");
+				var num1 = parseInt(Math.random()*10);
+				console.log(num1);
+				if(num1 == 0){
+					imgNode1[0].src = "images/zAZfB.jpg";
+				}
+				else if(num1 == 1){
+					imgNode1[0].src = "images/ZEhUN.jpg";
+				}
+				else if(num1 == 2){
+					imgNode1[0].src = "images/zFC9H.jpg";
+				}
+				else if(num1 == 3){
+					imgNode1[0].src = "images/zhWY9.jpg";
+				}
+				else if(num1 == 4){
+					imgNode1[0].src = "images/Zin4c.jpg";
+				}
+				else if(num1 == 5){
+					imgNode1[0].src = "images/ZITGj.jpg";
+				}
+				else if(num1 == 6){
+					imgNode1[0].src = "images/zJ6iV.jpg";
+				}
+				else if(num1 == 7){
+					imgNode1[0].src = "images/zjsKP.jpg";
+				}
+				else if(num1 == 8){
+					imgNode1[0].src = "images/ZKc9S.jpg";
+				}
+				else if(num1 == 9){
+					imgNode1[0].src = "images/zKDXU.jpg";
+				}
+				var oldNode = codeImg[0].children[0];
+				codeImg[0].replaceChild(imgNode1[0], oldNode);
+			}
+		}
+		inpcode[0].onfocus=function(){
+			notice[2].innerHTML="";
+		}
+		inpcode[0].onblur=function(){
+			var str=codeImg[0].children[0].getAttribute("src");
+			var str1 = str.slice(7,12);
+			console.log(str);
+			console.log(str1);
+			if(inpcode[0].value!=str1){
+				notice[2].innerHTML = "验证码错误";
+			}
+			else{
+				notice[2].innerHTML="";
+			}
+		}
+		btn[0].onclick=function(){
+			if(notice[0].innerHTML==""&&notice[1].innerHTML==""&&notice[2].innerHTML==""){
+				window.alert("登陆成功");
+			}
+			else{
+				window.alert("登陆失败");
+			}
+		}
+	</script>
+</body>
+</html>
