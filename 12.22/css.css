@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: MyFontName;
+    src: url('politicaregular.ttf')
+}
+ul,li{
+	list-style: none;
+}
+a{
+	color:black;
+    text-decoration: none;
+}
+#box{
+	background: url("images/a15.png") no-repeat 430px;
+	background-color:grey;
+	position:relative;
+	overflow:hidden;
+	width:1800px;
+	margin:0 auto;
+}
+#box1{
+	margin-left:450px;
+	width:1500px;
+	height:40px;
+	overflow: hidden;
+	font-size: 30px;
+
+}
+#box2{
+	color:red;
+	padding-top:10px;
+	display:inline;
+}
+.box3{
+	width:1800px;
+	/* background-color:#10d35d; */
+	background:url("img/a1.png") no-repeat 420px;
+	background-color:#44b05a;
+	height:45px;
+	margin:0 auto;
+}
+.box3 ul{
+	display:inline-block;
+	margin-left:30px;
+	font-size:15px;
+	text-align:center;
+	margin-top:0px;
+
+}
+.box3 li{
+	display:inline-block;
+	font-size:20px;
+	height:45px;
+	width:110px;
+	text-align:center;
+	padding-top:5px;
+	/* border:3px red solid; */
+	color:black;
+}
+ .box3 li:hover{
+	background-color:#10d35d;
+	font-size:22px;
+	/* color:white; */
+}
+.box3 li a:hover{
+	color: white;
+}
+span1{
+	font-size:15px;
+	margin-left:50px;
+}
+span2{
+	font-size:15px;
+	margin-right:60px;
+}
+.box4{
+	width: 1200px;
+	height: 397px;
+	border: 1px solid red;
+	margin-top:0px;
+	margin: 50px auto;
+
+	/* margin-left:50px; */
+	/* margin-right:50px; */
+	position: relative;
+	overflow: hidden;
+}
+.box5 p{
+	display:inline-block;
+	margin-top:10px;
+}
+.box5 p a:hover{
+	color:red;
+}
+.box6{
+	width:1800px;
+	margin-left:400px;
+}
+.box7{
+	width:700px;
+	border-bottom:2px #EBEBEB solid;
+}
+.box7 li{
+	display:inline-block;
+}
+.box7 span3{
+	font-size:5px;
+}
+.box7 span4{
+	font-size:20px;
+	margin-right:20px
+}
+.box8{
+	margin-top:20px;
+	width:300px;
+}
+.box8 span5{
+	font-size:15px;
+	color:black;
+	font-weight:900;
+}
+.box8 li a:hover{
+	color:blue;
+}
+.box8 span6{
+	border-bottom:2px #EBEBEB solid;
+	/* margin-bottom: 20px; */
+}
+.box9a{
+	margin-bottom:15px;
+}
+.box10 img{
+	left:0px;
+}
+.box10 li{
+	background-position:0px;
+	font-size:5px;
+	width:300px;
+	height:25px;
+	margin-bottom:10px;
+	/* text-align:center; */
+	overflow:hidden;
+	border: 2px red solid;
+}
+.box10 li a:hover{
+	color:grey;
+	text-decoration:grey;
+	/* display:block; */
+}
+.slider{
+	width: 8400px;
+	position:absolute;
+	left: -1200px;
+}
+.slide{
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+}
+.box4>span{
+	display: block;
+	width: 30px;
+	height:50px;
+	cursor:pointer;
+	color: white;
+	top: 175px;
+	line-height: 50px;
+	background: rgba(255,0,0);
+	font-size: 30px;
+	position:absolute;
+	opacity:0;
+}
+#left{
+	left: 30px;
+	background-color:red;
+}
+#right{
+	right: 30px;
+	background-color:red;
+}
+.nav{
+	position:absolute;
+	left:500px;
+	bottom:20px;
+}
+.nav>li{
+	float:left;
+	width:20px;
+	height:20px;
+	background:#ccc;
+	cursor:pointer;
+	margin:0 10px;
+	border-radius:50%;
+	text-align:center;
+}
+.nav .active{
+	background:red;
+	color:white;
+	text-align:center;
+}
+#main{
+	margin: 0 auto;
+	width: 1600px;
+	height: 1500px;
+}
+#smallpic{
+	width: 920px;
+	margin: 0 auto;
+
+}
+#a{
+	width: 920px;
+	margin: 0 auto;
+}
+#leftTool{
+	position: fixed;
+	top: 80px;
+	height: 68.5px;
+	float: left;
+	width: 80px;
+	padding-right: 30px;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    background-color: red;
+}
+#leftTool ul{
+	width: 80px;
+}
+#txt{
+	font-style: 华文行楷;
+	font-size: 25px;
+}
+#bb{
+/* 	float: left; */
+}
+.gou{
+	height:900px;
+    width:250px;
+    top:100px;
+    left:200px;
+    position:fixed;
+    border-bottom:2px solid white;
+}
+#time{
+	width: 110px;
+	margin-left: 70px;
+	margin-left: 70px;
+}
+
+#time p{
+	color: black;
+	font-family: MyFontName;
+	text-align: center;
+}
+
+#currentYear{
+	font-size: 40px;
+}
+#currentDate{
+	font-size: 30px;
+	margin-top: 20px;
+}
+#changxiang{
+	font-size:20px;
+	font-family: Microsoft YaHei;
+	margin-top: 70px;
+}
+#titan{
+	border-radius: 5px;
+	border: 1px solid #2291F7;
+	width: 70px;
+	margin: 0 auto;
+	background-color: #2291F7;
+	color: white;
+	text-align: center;
+}
+#share{
+	margin-top: 200px;
+}
+#share p{
+	color: #CCCCCC;
+	text-align: center;
+}
+#share div{
+	background-color: #CCCCCC;
+	width: 50px;
+	height: 50px;
+	margin-left: 100px;
+	margin-top: 20px;
+	border-radius: 25px;
+}
+#qq{
+	background: url('img/qq.png') no-repeat center;
+}
+#weixin{
+	background: url('img/weixin.png') no-repeat center;
+}
+#kongjian{
+	background: url('img/kongjian.png') no-repeat center;
+}
+#lishi{
+	font-size: 40px;
+	border-bottom: 3px solid #10d35d;
+	margin-bottom: 20px;
+}
+#gifbox{
+	width: 920px;
+	margin: 0 auto;
+	margin-top: 200px;
+	height: 600px;
+}
+#gifbox p{
+	font-size: 30px;
+}
+#gifbox div{
+	float: left;
+	margin-left: 40px;
+}
+#jingxin{
+	font-size: 40px;
+	border-bottom: 3px solid #10d35d;
+	margin-bottom: 20px;
+}
+ 	
