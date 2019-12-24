@@ -1,0 +1,260 @@
+/*
+* @Author: HP-PC
+* @Date:   2019-12-19 20:02:32
+* @Last Modified by:   HP-PC
+* @Last Modified time: 2019-12-24 09:55:45
+*/
+*{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.box3{
+	width:1550px;
+	/* background-color:#10d35d; */
+	background:url("a1.png") no-repeat 200px;
+	background-color:#44b05a;
+	height:45px;
+	margin:0 auto;
+}
+.box3 ul{
+	display:inline-block;
+	margin-left:30px;
+	font-size:15px;
+	text-align:center;
+	margin-top:0px;
+}
+.box3 li{
+	display:inline-block;
+	font-size:20px;
+	height:45px;
+	width:120px;
+	text-align:center;
+	padding-top:5px;
+	margin-left:15px;
+	/* border:3px red solid; */
+	color:black;
+}
+.box3 li:hover{
+	background-color:#10d35d;
+	font-size:22px;
+	/* color:white; */
+}
+.box3 li a:hover{
+	color: white;
+}
+span1{
+	font-size:15px;
+	margin-left:50px;
+}
+span2{
+	font-size:15px;
+	margin-right:60px;
+}
+.box{
+	background-color: ;/*背景颜色*/
+	width: 1200px;
+	height: 100px;
+	margin: 30px auto;
+	border: 1px solid #efe4b0;
+}
+.boxtop{
+	background: url('查询.png') no-repeat 40px ;
+	background-color: #efe4b0;
+	height: 40px;
+}
+.boxtop ul{
+	display:inline-block;
+	margin-left:30px;
+	font-size:15px;
+	text-align:center;
+	margin-top:0px;
+}
+.boxtop li{
+	display:inline-block;
+	font-size:20px;
+	height:45px;
+	text-align:center;
+	padding-top:5px;
+
+}
+.boxtop li a{
+	text-decoration:underline;
+	color: black;
+	font-size: 0.8em;
+	padding-left:15px;
+}
+.boxtop li a:hover{
+	color: red;
+}
+.search{
+	height: 60px;
+	background-color: #f5f2db;
+}
+.search1{
+	display: inline-block;
+	height: 40px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-left: 70px;/
+}
+.search2{
+	padding-left: 150px;
+	display: inline-block;
+	position:relative;
+}
+.search3{
+	padding-left: 150px;
+	margin-top:20px;
+	display: inline-block;
+	position:absolute;
+}
+#btn{
+	height: 20px;
+	width:50px;
+	margin-left: 30px;
+	background:  #dccc93;
+	text-align: center;
+}
+.btn1{
+	margin-left: 41px;
+    width:160px;
+    border:1px solid #ccc;
+    /* display: none; */
+    height: 40px;
+ }
+
+
+.box1{
+	background-color:#f8f5f5 ;/*背景颜色*/
+	width: 1200px;
+	height: 600px;
+	margin: -10px auto;
+	border: 1px solid #efe4b0;
+}
+.box1top{
+	background-color:#efe4b0 ;
+	height: 30px;
+	width: 1200px;
+	text-align: center;
+	font-size:1.7em;
+	font-family:SimSun;
+	color: #f84f4f;
+}
+.box1mid{
+	height: 570px;
+	width: 1200px;
+}
+.box1mid li{
+	margin-left: 85px;
+	padding-top: 10px;
+	width:200px;
+	height: 130px;
+	float: left;
+}
+.box100{
+	width:100px;
+	height:100px;
+	float:right;
+}
+.box100 p{
+	margin-top: 15px;
+}
+.box100 p a{
+	text-decoration:underline;
+	color: black;
+	font-size: 0.8em;
+}
+.box100 p a:hover{
+	color: red;
+}
+.box2{
+	margin:25px auto;
+	height: 400px;
+	width: 1200px;
+	border: 1px solid #efe4b0;
+}
+.box4{
+	margin:-10px auto;
+	height: 40px;
+	width: 1200px;
+	border: 1px solid #fdeca6;
+	background: url('向上.png') no-repeat 1000px center;
+	background-color:#fdeca6 ;
+}
+.getTop{
+	margin-left:1040px;
+	width: 100px;
+	height: 40px;
+	font-family:SimSun ;
+	text-align: center;
+	font-size: 1.3em;
+	padding-top: 8px;
+}
+.box2top{
+	width: 1200px;
+	height: 38px;
+	background-color: #fdeca6;
+}
+.box2top1{
+	display: inline-block;
+	margin-left: 100px;
+	width: 150px;
+	height: 38px;
+	background-color: #f2eedb;
+	border: 1px solid #ccc;
+}
+.box2top1 p{
+	font-size: 1.2em;
+	text-align: center;
+	font-family:SimSun ;
+	padding-top: 6px;
+}
+.box2top2{
+	display: inline-block;
+	color: red;
+	font-family: SimSun;
+	margin-left: 310px;
+}
+.box2top3{
+	margin-left: 10px;
+	display: inline-block;
+}
+.nav>li{
+	background-color: #fdeca6;
+	text-align: center;
+	width: 50px;
+	height: 20px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	cursor: pointer;
+}
+#onl{
+	background:#ccc;
+}
+.box2l{
+	height: 362px;
+	width: 1200px;
+	border: 1px solid #fdeca6;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width: 4800px;
+	position: absolute;
+}
+.slide{
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+}
+.slide li{
+	display: inline-block;
+}
