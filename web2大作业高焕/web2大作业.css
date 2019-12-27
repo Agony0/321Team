@@ -104,44 +104,20 @@ a{
 .g112{
 	text-align: center;
 }
-.g11{
-	background:url(img1.jpg) no-repeat center;
-}
-.g12{
-	background:url(img2.jpg) no-repeat center;
-}
-.g13{
-	background:url(img3.jpg) no-repeat center;
-}
-.g14{
-	background:url(img4.jpg) no-repeat center;
-}
-.g15{
-	background:url(img5.jpg) no-repeat center;
-}
-.g16{
-	background:url(img6.jpg) no-repeat center;
-}
-.g17{
-	background:url(img7.jpg) no-repeat center;
-}
-.g18{
-	background:url(img8.jpg) no-repeat center;
-}
 .g1 li{
 	float:left;
-	width:270px;
+	width:250px;
 	height:290px;
 	border:1px #878787 solid;
-	margin-right:30px;
+	margin-right:50px;
 	position:relative;
 }
 .g2 li{
 	float:left;
-	width:270px;
+	width:250px;
 	height:290px;
 	border:1px #878787 solid;
-	margin-right:30px;
+	margin-right:50px;
 	margin-top:30px;
 	position: relative;
 
@@ -157,7 +133,7 @@ a{
 }
 .g ul li div{
 	height:50px;
-	width:271px;
+	width:250px;
 	position:absolute;
 	bottom:0px;
 	left:0px;
